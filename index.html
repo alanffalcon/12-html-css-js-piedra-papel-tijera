@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~ Piedra Papel Tijeras ~</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- ICON -->
+    <link rel="icon" href="./imagenes/logo.ico">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Butcherman&family=Creepster&family=Eater&family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="head-h1">Piedra Papel y Tijeras</h1>
+        <h2 class="head-h2">¡DE LA MUERTE!</h2>
+    </header>
+    <main>
+        <div class="m1-h">
+            <h2 class="m1-h2">Eligue tu Arma...</h2>
+        </div>        
+        <div class="weapons">
+            <button id="rock" class="weapon">
+                <img id="ppt" class="rock" src="./imagenes/rock.png" alt="">
+                <p class="description">Piedra</p>
+            </button>
+            <button id="paper" class="weapon">
+                <img id="ppt" class="paper" src="./imagenes/paper.png" alt="">
+                <p class="description">Papel</p>
+            </button>
+            <button id="scissor" class="weapon">
+                <img id="ppt" class="scissor" src="./imagenes/scissor.png" alt="">
+                <p class="description">Tijera</p>
+            </button>
+        </div>
+        <div class="results">
+            <div id="user-label" class="result">
+                <p class="r-p">YOU</p>
+                <p id="user-score" class="r-p">0</p>
+            </div>
+            <div id="computer-label" class="result">
+                <p class="r-p">COMPUTER</p>
+                <p id="computer-score" class="r-p">0</p>
+            </div>
+        </div>       
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

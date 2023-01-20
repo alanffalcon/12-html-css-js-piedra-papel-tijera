@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color1);
+    overflow: hidden;
+}
+
+/* VARIABLES */
+
+:root {
+    --color1: rgb(62, 28, 51);
+    --color2: rgb(246, 146, 29);
+    --color3: rgb(177, 70, 35);
+    --color4: rgb(176, 12, 12);
+}
+
+/* HEADER */
+
+.head-h1 {
+    font-family: 'Eater', cursive;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--color2);
+}
+
+.head-h2 {
+    font-family: 'Eater', cursive;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--color2);
+}
+
+/* MAIN-1 */
+
+.m1-h2 {
+    font-family: 'Creepster', cursive;
+    color: var(--color3);
+    font-size: 3rem;
+    letter-spacing: 5px;
+    padding-left: 7%;
+}
+
+.weapons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.weapon:hover {
+    cursor: pointer;
+}
+
+button {
+    border: none;
+}
+
+#ppt {
+    width: 400px;
+    height: 400px;
+}
+
+#ppt:hover{
+    border: 5px solid black;
+    box-shadow: 3px 1px 15px 5px #000000;
+}
+
+#ppt:active {
+    border: 5px solid var(--color4);
+}
+
+/* #ppt:active{
+    border: 5px solid var(--color4);
+} */
+
+.description {
+    background-color: var(--color1);
+    font-family: 'Creepster', cursive;
+    font-size: 2rem;
+    color: var(--color4);
+}
+
+
+
+/* RESULTS */
+
+.results {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.r-p {
+    font-family: 'Butcherman', cursive;
+    text-align: center;
+    font-size: 2.5rem;
+    color: grey
+}
+
+/* RESPONSIVE */
+
+@media (max-width:1100px) {
+    .head-h1 {
+        font-size: 3rem;
+    }
+    .head-h2 {
+        font-size: 2rem;
+    }
+    #ppt {
+        width: 300px;
+        height: 25%;
+    }
+}
+
+@media (max-width:400px) {
+    .head-h1 {
+        font-size: 2rem;
+    }
+    .head-h2 {
+        font-size: 1.5rem;
+    }
+    .m1-h2{
+        font-size: 1.5rem;
+    }
+    #ppt {
+        width: 100px;
+        height: 25%;
+    }
+}
+
+/* VICTORIA Y DERROTA JS */
+
+.green-glow {
+    border: 4px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow {
+    border: 4px solid #fc121b;
+    box-shadow: 0 0 10px #d01115;
+}
+
+.gray-glow {
+    border: 4px solid #464647;
+    box-shadow: 0 0 10px #25292b;
+}
